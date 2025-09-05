@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VT STORE — Link na Bio</title>
+  <meta name="description" content="Links rápidos da VT STORE: WhatsApp, Catálogo, Promoções e Atacado.">
+  <style>
+    :root{
+      --bg:#0f0f10;
+      --card:#161618;
+      --text:#ffffff;
+      --muted:#b6b6b6;
+      --accent:#e0a661; /* dourado suave */
+      --accent-2:#1f1f22;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 1200px at 50% -20%, #1f1f22 5%, var(--bg) 55%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      line-height:1.4;
+    }
+    .wrap{
+      max-width:720px;
+      margin:32px auto 56px;
+      padding:0 18px;
+    }
+    header{
+      display:flex; gap:16px; align-items:center; margin-bottom:18px;
+    }
+    .avatar{
+      width:84px; height:84px; border-radius:50%;
+      background:linear-gradient(145deg, #2a2a2f, #111113);
+      border:2px solid var(--accent);
+      display:grid; place-items:center;
+      overflow:hidden;
+    }
+    .avatar img{width:100%; height:100%; object-fit:cover}
+    h1{font-size:1.5rem; margin:0 0 4px}
+    .bio{color:var(--muted); font-size:.95rem}
+    .card{
+      background:linear-gradient(180deg, var(--card), var(--accent-2));
+      border:1px solid #242428;
+      border-radius: var(--radius);
+      padding:18px;
+      margin:14px 0;
+      box-shadow: 0 10px 24px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.03);
+    }
+    .btn{
+      display:flex; align-items:center; gap:12px;
+      width:100%;
+      border:1px solid #2a2a2e;
+      background: #1a1a1d;
+      padding:16px 18px;
+      border-radius:14px;
+      text-decoration:none; color:var(--text);
+      font-weight:600; letter-spacing:.2px;
+      transition:.2s ease;
+    }
+    .btn:hover{transform: translateY(-1px); border-color: var(--accent); box-shadow: 0 6px 18px rgba(224,166,97,.15)}
+    .btn small{color:var(--muted); font-weight:500}
+    .grid{display:grid; gap:12px}
+    .grid.two{grid-template-columns:1fr 1fr}
+    .pill{
+      display:inline-block; padding:6px 10px; border-radius:999px;
+      background:#1c1c20; border:1px solid #2a2a2e; color:var(--muted); font-size:.8rem;
+    }
+    footer{
+      margin-top:24px; text-align:center; color:var(--muted); font-size:.85rem;
+    }
+    .brand{color:var(--accent); font-weight:700}
+    @media (max-width:560px){ .grid.two{grid-template-columns:1fr} }
+  </style>
+  <!--
+    Dica: cole abaixo seu pixel (Meta/TT) se desejar rastrear cliques
+    <script>/* pixel aqui */</script>
+  -->
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">
+        <!-- Substitua o src pela sua foto quadrada -->
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop" alt="VT STORE">
+      </div>
+      <div>
+        <h1>VT STORE</h1>
+        <div class="bio">Estilo & Tecnologia — varejo e atacado. Enviamos para todo o Brasil.</div>
+        <div class="pill">Arapiraca • AL</div>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="grid">
+        <a class="btn" href="https://wa.me/5582999151362?text=Oi%20VT%20STORE%20vim%20do%20Instagram%20%F0%9F%92%8C&utm_source=instagram&utm_medium=bio_link&utm_campaign=vtstore_whatsapp" target="_blank" rel="noopener">
+          📲 WhatsApp <small>(Atendimento imediato)</small>
+        </a>
+        <a class="btn" href="https://instagram.com/vt__store" target="_blank" rel="noopener">
+          🛍️ Catálogo no Instagram <small>(novidades e lançamentos)</small>
+        </a>
+        <a class="btn" href="https://example.com/promocoes?utm_source=instagram&utm_medium=bio_link&utm_campaign=promo" target="_blank" rel="noopener">
+          💸 Promoções da Semana <small>(até 50% off)</small>
+        </a>
+        <a class="btn" href="https://example.com/atacado?utm_source=instagram&utm_medium=bio_link&utm_campaign=atacado" target="_blank" rel="noopener">
+          📦 Atacado para Revenda <small>(tabela e condições)</small>
+        </a>
+        <a class="btn" href="https://example.com/politica-trocas?utm_source=instagram&utm_medium=bio_link&utm_campaign=suporte" target="_blank" rel="noopener">
+          🔁 Trocas & Suporte <small>(regras e prazos)</small>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin:0 0 10px">Categorias em destaque</h2>
+      <div class="grid two">
+        <a class="btn" href="https://example.com/camisetas?utm_source=instagram&utm_medium=bio_link&utm_campaign=camisetas" target="_blank" rel="noopener">👕 Camisetas</a>
+        <a class="btn" href="https://example.com/calcas?utm_source=instagram&utm_medium=bio_link&utm_campaign=calcas" target="_blank" rel="noopener">👖 Calças & Sarja</a>
+        <a class="btn" href="https://example.com/tenis?utm_source=instagram&utm_medium=bio_link&utm_campaign=calcados" target="_blank" rel="noopener">👟 Calçados</a>
+        <a class="btn" href="https://example.com/acessorios?utm_source=instagram&utm_medium=bio_link&utm_campaign=acessorios" target="_blank" rel="noopener">🧢 Acessórios</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin:0 0 10px">Fale com a gente</h2>
+      <div class="grid two">
+        <a class="btn" href="mailto:maria.laysa@hotmail.com?subject=Contato%20VT%20STORE">
+          ✉️ E-mail
+        </a>
+        <a class="btn" href="https://www.tiktok.com/@vtstore" target="_blank" rel="noopener">
+          🎵 TikTok
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> <span class="brand">VT STORE</span>. Todos os direitos reservados.
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
